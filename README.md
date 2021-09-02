@@ -35,6 +35,10 @@ Perform the following steps to run the project:
 ## Custom AWS Lambda Images
 ---
 
+Relevant Docs
+* [Create an image from an alternative base image](https://docs.aws.amazon.com/lambda/latest/dg/images-create.html#images-create-from-alt)
+* [Build RIE into your base image](https://docs.aws.amazon.com/lambda/latest/dg/images-test.html#images-test-alternative)
+
 A Lambda Dockerimage with a custom base image requires several things to work as an AWS Lambda.
 
 * Lambda Runtime Interface Client (RIC)
