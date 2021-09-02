@@ -1,0 +1,8 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  custom_aws_lambda:
+    build: .
+    volumes:
+      - ./audio:/audio
+    ports:
+      - 9000:8080
