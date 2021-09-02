@@ -15,7 +15,7 @@ Perform the following steps to run the project:
 
 * Start lambda container locally in a terminal
     ```bash
-    docker-compose up
+    make run
     ```
 
 * In a separate terminal, perform a ```curl``` request on the lambda container
