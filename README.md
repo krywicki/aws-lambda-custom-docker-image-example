@@ -108,7 +108,7 @@ fi
 ```
 
 The entrypoint for the Lambda Dockerfile should be the script so that a Lambda Container can be dynamically run locally
-or in the cloud with difficulty.
+or in the cloud without difficulty.
 
 *Dockerfile Snippet*
 ```Dockerfile
