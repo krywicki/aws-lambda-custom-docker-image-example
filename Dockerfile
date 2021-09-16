@@ -48,7 +48,9 @@ WORKDIR ${FUNCTION_DIR}
 
 # Install Runtime Interface Emulator (for local running)
 COPY lambda_runtime/runtime.sh /runtime.sh
-COPY lambda_runtime/aws-lambda-rie /usr/local/bin/aws-lambda-rie
+RUN curl \
+  -s -L "https://github.com/aws/aws-lambda-runtime-interface-emulator/releases/download/1.1/aws-lambda-rie" \
+  -o /usr/local/bin/aws-lambda-rie
 RUN chmod +x /runtime.sh /usr/local/bin/aws-lambda-rie
 
 # Copy in the build image dependencies
